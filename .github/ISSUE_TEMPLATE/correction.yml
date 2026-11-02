@@ -1,0 +1,27 @@
+name: Correction report
+description: Report a wrong, broken, or outdated official link or fact.
+title: "Correction: "
+labels: [correction]
+body:
+  - type: markdown
+    attributes:
+      value: Reports are public. Do not include personal information or private business details.
+  - type: input
+    id: state
+    attributes:
+      label: State
+      placeholder: e.g. Ohio
+    validations:
+      required: true
+  - type: input
+    id: page
+    attributes:
+      label: Page on our site
+      placeholder: https://.../states/ohio/
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is wrong?
+      description: Include the official page that shows the correct information, if you have it.
+    validations:
+      required: true
